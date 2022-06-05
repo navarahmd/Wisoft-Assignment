@@ -1,0 +1,934 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	vertical-align: middle;
+}
+
+@font-face {
+	font-family: Anton-Regular;
+	src: url(../fonts/Anton-Regular.ttf);
+}
+
+@font-face {
+	font-family: BebasNeue-Regular;
+	src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+	font-family: ASPHALTIC GRAIN CONDENSED PERSONAL USE;
+	src: url(../fonts/ASPHALTIC GRAIN CONDENSED PERSONAL USE.ttf);
+}
+
+@font-face {
+	font-family: ASEGOEUI;
+	src: url(../fonts/SEGOEUI.ttf);
+}
+
+@font-face {
+	font-family: GothamBold;
+	src: url(../fonts/GothamBold.ttf);
+}
+
+.wrapper {
+	width: 1200px;
+	max-width: 1200px;
+	margin: auto;
+	position: relative;
+}
+
+a {
+	-webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width, height, -o-transform, background, font-size, opacity;
+	-o-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+	-moz-transition-property: width, height, -o-transform, background, font-size, opacity;
+	-moz-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+	transition-property: width, height, transform, background, font-size, opacity;
+	transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+}
+
+a:hover {
+	transform: scale(1.2);
+
+}
+
+/* Header */
+header {
+	background: #484848;
+}
+
+header .header-contents {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+
+.header-contents .header-logo {
+	height: 64px;
+}
+
+.header-contents .header-logo img {
+	height: 100%;
+}
+
+.header-menu .menu-items {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	background: #008F9F;
+	padding: 15px 40px;
+}
+
+.header-menu .menu-items a {
+	font-family: Anton-Regular;
+	color: #fff;
+	text-decoration: none;
+	font-size: 21px;
+	padding: 0px 15px;
+}
+
+.header-contents .header-btn a {
+	display: flex;
+	align-items: center;
+	font-family: Anton-Regular;
+	font-size: 24px;
+	line-height: 41px;
+	padding-left: 15px;
+	padding-right: 20px;
+	text-decoration: none;
+	background: #E50019;
+	color: #fff;
+}
+
+.header-contents .header-btn a span {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.cordless-when-hover .nav {
+	display: inline-block;
+	padding: 5px;
+}
+
+.cordless-when-hover .cordless-tab-contents {
+	padding: 5px;
+	padding-top: 0px;
+}
+
+.cordless-when-hover .cordless-tabs {
+	display: flex;
+	align-items: center;
+}
+
+.cordless-when-hover .cordless-tabs img {
+	width: 132px;
+}
+
+.header-contents .header-menu {
+	position: relative;
+}
+
+.cordless-when-hover.active {
+	display: block !important;
+
+
+}
+
+.cordless-when-hover {
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	display: none;
+	-webkit-transition: all .5s ease-in-out 0s;
+	transition: all .5s ease-in-out 0s;
+
+
+}
+
+.cordless-when-hover .info {
+	display: none;
+
+}
+
+.cordless-when-hover .active {
+	display: block;
+	position: relative;
+}
+
+.cordless-when-hover .current {
+	position: relative;
+}
+
+.cordless-when-hover .current:before {
+	content: " ";
+	position: absolute;
+	right: 60px;
+	bottom: 0;
+	border-top: none;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid #484848;
+}
+
+.cordless-when-hover .cordless-menu {
+	list-style-type: none;
+}
+
+.cordless-when-hover .tab-contents {
+	display: flex;
+	justify-content: space-between;
+	background-color: #484848;
+	padding: 10px;
+}
+
+.cordless-when-hover .about-col {
+	width: 40%;
+}
+
+.cordless-when-hover .video-col {
+	width: 65%;
+}
+
+.cordless-when-hover .video-col video {
+	height: 240px;
+	width: 100%;
+}
+
+.cordless-when-hover .cordless-menu li a {
+	text-decoration: underline;
+	color: #fff;
+	font-family: BebasNeue-Regular;
+	line-height: 31px;
+	font-size: 23px;
+}
+
+.cordless-when-hover .cordless-menu li a:hover {
+	color: #E50019;
+	text-decoration: none;
+}
+
+.cordless-when-hover.support {
+	width: fit-content;
+	right: 0;
+	border: 5px solid #fff;
+
+}
+
+.cordless-when-hover.support .tab-contents {
+	padding-right: 45px;
+}
+
+.header-contents .menu-item {
+	position: relative;
+}
+
+.header-contents .menu-item.show:before {
+	content: " ";
+	position: absolute;
+	right: 60px;
+	bottom: -45%;
+	border-top: none;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid #fff;
+}
+
+/* Banner */
+.banner-section .banner-slider {
+	background: url(../images/shutterstock_167023445.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.banner-section .banner-contents {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.banner-section .banner-contents .banner-text {
+	padding: 110px 0px;
+	width: 70%;
+}
+
+.banner-section .banner-contents .banner-text h1 {
+	font-family: ASPHALTIC GRAIN CONDENSED PERSONAL USE;
+	font-size: 115px;
+	line-height: 105px;
+	color: #fff;
+}
+
+.banner-section .banner-contents .banner-text p {
+	font-family: BebasNeue-Regular;
+	font-size: 39px;
+	line-height: 45px;
+	color: #fff;
+	padding: 15px 0px;
+}
+
+.banner-section .banner-contents .banner-text a {
+	display: flex;
+	align-items: center;
+	font-family: Anton-Regular;
+	font-size: 31px;
+	line-height: 46px;
+	padding-left: 15px;
+	padding-right: 20px;
+	text-decoration: none;
+	background: #E50019;
+	color: #fff;
+	width: fit-content;
+}
+
+.banner-section .banner-contents .right-layout .banner-column img {
+	width: 270px;
+	height: 180px;
+	object-fit: cover;
+}
+
+.banner-section .banner-contents .right-layout .banner-column:first-child h4 {
+	font-family: ASEGOEUI;
+	text-shadow: 0px 4px 3px #E50019,
+		0px 8px 13px #E50019,
+		0px 18px 23px #E50019;
+}
+
+.banner-section .banner-contents .right-layout .banner-column h4 {
+	font-family: ASEGOEUI;
+	font-size: 20px;
+	line-height: 27px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0px 4px 3px #008F9F,
+		0px 8px 13px #008F9F,
+		0px 18px 23px #008F9F;
+}
+
+.banner-section .banner-contents .right-layout .banner-column p {
+	font-family: GothamBold;
+	font-size: 13px;
+	line-height: 17px;
+	color: #fff;
+	text-align: center;
+}
+
+.banner-section .banner-contents .right-layout .banner-column .title-contents {
+	position: absolute;
+	z-index: 9;
+	bottom: 9%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.banner-section .banner-contents .right-layout .banner-column {
+	position: relative;
+	z-index: 9;
+	border: 5px solid #fff;
+}
+
+.banner-section .banner-contents .right-layout .banner-column:first-child:after {
+	background-color: #E50019;
+}
+
+.banner-section .banner-contents .right-layout .banner-column:after {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+	width: 100%;
+	height: 25%;
+	background-color: #008F9F;
+	z-index: 0;
+}
+
+/* Cordless Systems */
+.cordless-systems {
+	padding: 60px 0px;
+}
+
+.cordless-systems .product-banners {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 15px;
+}
+
+.cordless-systems h2 {
+	font-family: ASPHALTIC GRAIN CONDENSED PERSONAL USE;
+	font-size: 75px;
+	line-height: 100px;
+	color: #E50019;
+	text-align: center;
+}
+
+.cordless-systems .product-banners .product-banner {
+	position: relative;
+}
+
+.cordless-systems .product-banner .about-product {
+	position: absolute;
+	bottom: 0;
+	height: fit-content;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+
+.cordless-systems .product-banner .about-product h3 {
+	font-family: Anton-Regular;
+	font-size: 40px;
+}
+
+.cordless-systems .product-banner .about-product p {
+	font-family: BebasNeue-Regular;
+	font-size: 18px;
+	line-height: 22px;
+	padding-bottom: 5px;
+}
+
+.cordless-systems .product-banners .product-banner .products-image {
+	width: 100%;
+}
+
+.cordless-systems .product-banner .about-product a {
+	display: flex;
+	align-items: center;
+	font-family: Anton-Regular;
+	font-size: 16px;
+	line-height: 24px;
+	padding-left: 15px;
+	padding-right: 20px;
+	text-decoration: none;
+	background: #E50019;
+	color: #fff;
+	width: fit-content;
+}
+
+.cordless-systems .product-banner .about-product a img {
+	width: 15px;
+	margin-left: 5px;
+}
+
+.cordless-systems .product-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 15px;
+	background-color: #F7F7F7;
+}
+
+.cordless-systems .product-info .product-image {
+	position: relative;
+	background-color: #F7F7F7;
+	padding: 5px;
+	width: 35%;
+}
+
+.cordless-systems .product-info .product-image .product-img {
+	width: 100%;
+}
+
+.cordless-systems .product-info .product-details {
+	background-color: #F0F0F0;
+	padding: 5px;
+	width: 60%;
+}
+
+.cordless-systems .product-info .product-image .logo-top {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 45px;
+}
+
+.cordless-systems .product-info .product-details .product-btns a {
+	display: flex;
+	align-items: center;
+	font-family: Anton-Regular;
+	font-size: 12px;
+	line-height: 18px;
+	margin-right: 5px;
+	text-decoration: none;
+	background: #E50019;
+	color: #fff;
+	width: fit-content;
+	padding: 5px 15px 5px 10px;
+}
+
+.cordless-systems .product-info .product-details .product-btns a img {
+	margin-left: 5px;
+	width: 15px;
+}
+
+.cordless-systems .product-info .product-details .product-btns {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.cordless-systems .product-info .product-details h4 {
+	font-family: Anton-Regular;
+	font-size: 24px;
+	line-height: 35px;
+	color: #008F9F;
+}
+
+.cordless-systems .product-info .product-details h5 {
+	font-family: Anton-Regular;
+	font-size: 16px;
+	line-height: 24px;
+	color: #484848;
+}
+
+.cordless-systems .product-info .product-details p {
+	font-family: BebasNeue-Regular;
+	font-size: 12px;
+	line-height: 18px;
+	color: #484848;
+}
+
+/* Text-banner */
+.Text-banner-section {
+	background: url('../images/banner-2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 60px 0px;
+}
+
+.Text-banner-section h2 {
+	text-align: center;
+	color: #fff;
+	font-family: ASPHALTIC GRAIN CONDENSED PERSONAL USE;
+	font-size: 95px;
+	line-height: 120px;
+}
+
+/* featured-products */
+.featured-product-section {
+	padding: 60px 0px;
+	text-align: center;
+}
+
+.featured-product-section .products-info {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 24px;
+	grid-row-gap: 24px;
+}
+
+.featured-product-section .products-info .single-product {
+	background-color: #FCFAFA;
+	padding: 20px 15px;
+}
+
+.featured-product-section h2 {
+	font-family: ASPHALTIC GRAIN CONDENSED PERSONAL USE;
+	font-size: 75px;
+	line-height: 100px;
+	color: #E50019;
+	text-align: center;
+}
+
+.featured-product-section .products-info .single-product a {
+	display: flex;
+	align-items: center;
+	font-family: Anton-Regular;
+	font-size: 16px;
+	line-height: 24px;
+	margin-right: 5px;
+	text-decoration: none;
+	background: #E50019;
+	color: #fff;
+	width: fit-content;
+	margin: auto;
+	padding: 5px 15px 5px 10px;
+}
+
+.featured-product-section .product-img-logo {
+	position: relative;
+}
+
+.featured-product-section .product-img-logo .product-image {
+	width: 100%;
+}
+
+.featured-product-section .product-img-logo .logo-img {
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 135px;
+}
+
+.featured-product-section .products-info .single-product a img {
+	margin-left: 5px;
+	width: 15px;
+}
+
+.featured-product-section .products-info .single-product h4 {
+	font-family: Anton-Regular;
+	font-size: 24px;
+	line-height: 35px;
+	color: #008F9F;
+}
+
+.featured-product-section .products-info .single-product p {
+	font-family: BebasNeue-Regular;
+	font-size: 18px;
+	line-height: 24px;
+	color: #484848;
+}
+
+.featured-product-section .bottom-btn {
+	margin-top: 20px;
+}
+
+.featured-product-section .bottom-btn .explore-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Anton-Regular;
+	font-size: 16px;
+	line-height: 24px;
+	margin-right: 5px;
+	text-decoration: none;
+	background: #008F9F;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	margin: auto;
+	padding: 10px 0px;
+}
+
+.featured-product-section .bottom-btn .explore-button img {
+	width: 20px;
+	margin-left: 5px;
+}
+
+.Text-banner-section h2 {
+	position: relative;
+	z-index: 1;
+}
+
+.Text-banner-section-2 {
+	position: relative;
+	background: url('../images/banner-3.png');
+}
+
+.Text-banner-section-2:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-color: rgba(80, 80, 80, 0.4);
+}
+
+/* Feedback-section */
+.feedback-section {
+	background: #484848;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+.feedback-section .feedback-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.feedback-row .subscribe-form-col p {
+	font-family: BebasNeue-Regular;
+	font-size: 29px;
+	line-height: 35px;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 5px;
+}
+
+.feedback-row .subscribe-form-col form {
+	position: relative;
+	width: 500px;
+}
+
+.feedback-row .subscribe-form-col form button {
+	position: absolute;
+	width: fit-content;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.feedback-row .subscribe-form-col input {
+	border-radius: 45px;
+	border: none;
+	outline: none;
+	background-color: #fff;
+	padding: 15px;
+	width: 100%;
+}
+
+.feedback-row .subscribe-form-col input::placeholder {
+	font-size: 15px;
+	line-height: 35px;
+	color: #E50019;
+}
+
+.feedback-row .address-col {
+	background: #E50019;
+	padding: 5px 10px;
+}
+
+.feedback-row .address-col p span {
+	font-size: 19px;
+}
+
+.feedback-row .address-col p {
+	font-family: Anton-Regular;
+	font-size: 36px;
+	line-height: 36px;
+	color: #fff;
+}
+
+.feedback-row .social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15px;
+}
+
+.feedback-row .social-icons a img {
+	margin: 0px 5px;
+}
+
+/* Footer */
+footer {
+	background: #05080D;
+	position: relative;
+}
+
+footer:after {
+	position: absolute;
+	content: '';
+	width: 45%;
+	height: 100%;
+	right: 0;
+	top: 0;
+	background: url('../images/map.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+
+footer .footer-contents {
+	display: flex;
+	color: #fff;
+	font-family: Anton-Regular;
+	font-size: 21px;
+	line-height: 38px;
+	padding: 60px 0px;
+	position: relative;
+	z-index: 9;
+}
+
+.copyright-text {
+	background: #008F9F;
+	padding: 10px;
+	text-align: center;
+}
+
+.copyright-text p {
+	font-family: BebasNeue-Regular;
+	font-size: 29px;
+	line-height: 35px;
+	color: #fff;
+}
+
+.footer-menu ul {
+	list-style-type: none;
+}
+
+footer a {
+	font-family: Anton-Regular;
+	font-size: 21px;
+	line-height: 38px;
+	color: #fff;
+}
+
+footer .footer-menu .phone-numbers {
+	display: flex;
+	align-items: center;
+}
+
+footer .footer-menu .phone-numbers p {
+	padding: 0px 10px;
+}
+
+footer .footer-menu .f-sub-menu a {
+	text-decoration: none;
+}
+
+footer .footer-menu li img {
+	margin-right: 5px;
+}
+
+footer .footer-menu {
+	width: 15%;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-left: 1px solid #fff;
+}
+
+footer .footer-menu:first-child {
+	width: 30%;
+	border: none;
+}
+
+footer .footer-menu li a:hover {
+	color: #E50019;
+}
+
+footer .footer-menu .f-menu-item a:hover {
+	color: #E50019;
+	transform: scale(1.2);
+}
+
+footer .footer-menu .f-menu-item a {
+	margin: 0 5px;
+	-webkit-transition: -webkit-transform 1s, opacity 1s, background 1s, width 1s, height 1s, font-size 1s;
+	-webkit-border-radius: 5px;
+	-o-transition-property: width, height, -o-transform, background, font-size, opacity;
+	-o-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+	-moz-transition-property: width, height, -o-transform, background, font-size, opacity;
+	-moz-transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+	transition-property: width, height, transform, background, font-size, opacity;
+	transition-duration: 1s, 1s, 1s, 1s, 1s, 1s;
+}
+
+
+.nav-toggler {
+	border: none;
+	outline: none;
+	padding: 5px;
+	background-color: transparent;
+	cursor: pointer;
+	height: 39px;
+	display: none;
+}
+
+.nav-toggler span,
+.nav-toggler span:before,
+.nav-toggler span:after {
+	width: 28px;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+	transition: .3s;
+}
+
+.nav-toggler span:before {
+	content: '';
+	transform: translateY(-9px);
+}
+
+.nav-toggler span:after {
+	content: '';
+	transform: translateY(6px);
+}
+
+.nav-toggler.toggler-open span {
+	background-color: transparent;
+	position: relative;
+	z-index: 9;
+}
+
+.nav-toggler.toggler-open span:before {
+	transform: translateY(0px) rotate(45deg);
+}
+
+.nav-toggler.toggler-open span:after {
+	transform: translateY(-3px) rotate(-45deg);
+}

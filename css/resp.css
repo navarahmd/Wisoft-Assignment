@@ -193,12 +193,587 @@
 }
 
 /**********************iPhone Landscape*************/
-@media only screen and (max-width: 767px) and (min-width: 480px) {}
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+		.wrapper {
+		width: 90%;
+	}
+
+	.banner-section .banner-contents .banner-text h1 {
+		font-size: 50px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents {
+		flex-direction: column;
+		position: relative;
+		margin-bottom: 150px;
+		padding-bottom: 50px;
+	}
+
+	.banner-section .banner-contents .banner-text {
+		width: 100%;
+	}
+
+	.banner-section .banner-contents .right-layout {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		position: absolute;
+		bottom: -20%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column img {
+		width: 100%;
+		height: 100px;
+	}
+
+	.cordless-systems h2 {
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column h4 {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column p {
+		font-size: 8px;
+		line-height: normal;
+		padding: 5px;
+	}
+
+	.cordless-systems .product-banners {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cordless-systems .product-banners .products {
+		margin-bottom: 20px;
+	}
+
+	.Text-banner-section h2 {
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.featured-product-section .products-info {
+		grid-template-columns: 1fr;
+	}
+
+	.featured-product-section h2 {
+		font-size: 20px;
+	}
+
+	.feedback-section .feedback-row {
+		flex-direction: column;
+	}
+
+	.feedback-row .subscribe-form-col form {
+		width: 80%;
+		margin: auto;
+	}
+
+	footer .footer-contents {
+		flex-direction: column;
+	}
+
+	footer .footer-menu {
+		width: 100% !important;
+		display: none;
+	}
+
+	footer .footer-menu:first-child {
+		display: block !important;
+	}
+
+	.feedback-row .social-icons {
+		padding-bottom: 15px;
+	}
+
+	.feedback-row .subscribe-form-col p {
+		padding: 10px 0px;
+	}
+
+	.nav-toggler {
+		display: block;
+		padding-right: 20px;
+	}
+
+	.menu-items {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 60px);
+		left: 0;
+		top: 0;
+		flex-direction: column;
+		align-items: center;
+		border-top: 1px solid #444;
+		background-color: rgba(0, 0, 0, .75);
+		max-height: 0;
+		overflow: hidden;
+		transition: .3s;
+		padding: 0px !important;
+	}
+
+	.menu-items {
+		background-color: rgba(15, 15, 15, .9) !important;
+		align-items: flex-start !important;
+		justify-content: flex-start;
+		position: relative;
+	}
+
+	.menu-items li {
+		padding: 10px 0px;
+		position: relative;
+	}
+
+	.menu-items li:after {
+		position: absolute;
+		right: -5px;
+		width: 10px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		content: '';
+		background: url('../images/Icon ionic-ios-arrow-down.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.menu-items.open {
+		max-height: 100vh;
+		overflow: visible;
+		padding: 60px 0px !important;
+
+	}
+
+	.header-btn {
+		display: none;
+	}
+
+	.header-contents .header-menu {
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		top: 0;
+	}
+
+	.search-btn {
+		position: absolute;
+		right: 70px;
+	}
+
+	header .wrapper {
+		width: 100%;
+	}
+
+	.header-contents .header-logo {
+		padding-left: 20px;
+	}
+
+	.copyright-text p {
+		font-size: 20px;
+	}
+
+	.feedback-row .social-icons a img {
+		width: 40px;
+	}
+}
 
 /*************************iPad Portrait***************/
-@media only screen and (max-width: 985px) and (min-width: 768px) {}
+@media only screen and (max-width: 985px) and (min-width: 768px) {
+		.wrapper {
+		width: 90%;
+	}
+
+	.banner-section .banner-contents .banner-text h1 {
+		font-size: 50px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents {
+		flex-direction: column;
+		position: relative;
+		margin-bottom: 150px;
+		padding-bottom: 50px;
+	}
+
+	.banner-section .banner-contents .banner-text {
+		width: 100%;
+	}
+
+	.banner-section .banner-contents .right-layout {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		position: absolute;
+		bottom: -20%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column img {
+		width: 100%;
+		height: 100px;
+	}
+
+	.cordless-systems h2 {
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column h4 {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column p {
+		font-size: 8px;
+		line-height: normal;
+		padding: 5px;
+	}
+
+	.cordless-systems .product-banners {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cordless-systems .product-banners .products {
+		margin-bottom: 20px;
+	}
+
+	.Text-banner-section h2 {
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.featured-product-section .products-info {
+		grid-template-columns: 1fr;
+	}
+
+	.featured-product-section h2 {
+		font-size: 20px;
+	}
+
+	.feedback-section .feedback-row {
+		flex-direction: column;
+	}
+
+	.feedback-row .subscribe-form-col form {
+		width: 80%;
+		margin: auto;
+	}
+
+	footer .footer-contents {
+		flex-direction: column;
+	}
+
+	footer .footer-menu {
+		width: 100% !important;
+		display: none;
+	}
+
+	footer .footer-menu:first-child {
+		display: block !important;
+	}
+
+	.feedback-row .social-icons {
+		padding-bottom: 15px;
+	}
+
+	.feedback-row .subscribe-form-col p {
+		padding: 10px 0px;
+	}
+
+	.nav-toggler {
+		display: block;
+		padding-right: 20px;
+	}
+
+	.menu-items {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 60px);
+		left: 0;
+		top: 0;
+		flex-direction: column;
+		align-items: center;
+		border-top: 1px solid #444;
+		background-color: rgba(0, 0, 0, .75);
+		max-height: 0;
+		overflow: hidden;
+		transition: .3s;
+		padding: 0px !important;
+	}
+
+	.menu-items {
+		background-color: rgba(15, 15, 15, .9) !important;
+		align-items: flex-start !important;
+		justify-content: flex-start;
+		position: relative;
+	}
+
+	.menu-items li {
+		padding: 10px 0px;
+		position: relative;
+	}
+
+	.menu-items li:after {
+		position: absolute;
+		right: -5px;
+		width: 10px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		content: '';
+		background: url('../images/Icon ionic-ios-arrow-down.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.menu-items.open {
+		max-height: 100vh;
+		overflow: visible;
+		padding: 60px 0px !important;
+
+	}
+
+	.header-btn {
+		display: none;
+	}
+
+	.header-contents .header-menu {
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		top: 0;
+	}
+
+	.search-btn {
+		position: absolute;
+		right: 70px;
+	}
+
+	header .wrapper {
+		width: 100%;
+	}
+
+	.header-contents .header-logo {
+		padding-left: 20px;
+	}
+
+	.copyright-text p {
+		font-size: 20px;
+	}
+
+	.feedback-row .social-icons a img {
+		width: 40px;
+	}
+}
 
 /**************iPad Landscape***************/
-@media only screen and (max-width: 1024px) and (min-width: 986px) {}
+@media only screen and (max-width: 1024px) and (min-width: 986px) {
+		.wrapper {
+		width: 90%;
+	}
+
+	.banner-section .banner-contents .banner-text h1 {
+		font-size: 50px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents {
+		flex-direction: column;
+		position: relative;
+		margin-bottom: 150px;
+		padding-bottom: 50px;
+	}
+
+	.banner-section .banner-contents .banner-text {
+		width: 100%;
+	}
+
+	.banner-section .banner-contents .right-layout {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		position: absolute;
+		bottom: -20%;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column img {
+		width: 100%;
+		height: 100px;
+	}
+
+	.cordless-systems h2 {
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column h4 {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	.banner-section .banner-contents .right-layout .banner-column p {
+		font-size: 8px;
+		line-height: normal;
+		padding: 5px;
+	}
+
+	.cordless-systems .product-banners {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.cordless-systems .product-banners .products {
+		margin-bottom: 20px;
+	}
+
+	.Text-banner-section h2 {
+		font-size: 20px;
+		line-height: normal;
+	}
+
+	.featured-product-section .products-info {
+		grid-template-columns: 1fr;
+	}
+
+	.featured-product-section h2 {
+		font-size: 20px;
+	}
+
+	.feedback-section .feedback-row {
+		flex-direction: column;
+	}
+
+	.feedback-row .subscribe-form-col form {
+		width: 80%;
+		margin: auto;
+	}
+
+	footer .footer-contents {
+		flex-direction: column;
+	}
+
+	footer .footer-menu {
+		width: 100% !important;
+		display: none;
+	}
+
+	footer .footer-menu:first-child {
+		display: block !important;
+	}
+
+	.feedback-row .social-icons {
+		padding-bottom: 15px;
+	}
+
+	.feedback-row .subscribe-form-col p {
+		padding: 10px 0px;
+	}
+
+	.nav-toggler {
+		display: block;
+		padding-right: 20px;
+	}
+
+	.menu-items {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 60px);
+		left: 0;
+		top: 0;
+		flex-direction: column;
+		align-items: center;
+		border-top: 1px solid #444;
+		background-color: rgba(0, 0, 0, .75);
+		max-height: 0;
+		overflow: hidden;
+		transition: .3s;
+		padding: 0px !important;
+	}
+
+	.menu-items {
+		background-color: rgba(15, 15, 15, .9) !important;
+		align-items: flex-start !important;
+		justify-content: flex-start;
+		position: relative;
+	}
+
+	.menu-items li {
+		padding: 10px 0px;
+		position: relative;
+	}
+
+	.menu-items li:after {
+		position: absolute;
+		right: -5px;
+		width: 10px;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		content: '';
+		background: url('../images/Icon ionic-ios-arrow-down.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.menu-items.open {
+		max-height: 100vh;
+		overflow: visible;
+		padding: 60px 0px !important;
+
+	}
+
+	.header-btn {
+		display: none;
+	}
+
+	.header-contents .header-menu {
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		top: 0;
+	}
+
+	.search-btn {
+		position: absolute;
+		right: 70px;
+	}
+
+	header .wrapper {
+		width: 100%;
+	}
+
+	.header-contents .header-logo {
+		padding-left: 20px;
+	}
+
+	.copyright-text p {
+		font-size: 20px;
+	}
+
+	.feedback-row .social-icons a img {
+		width: 40px;
+	}
+}
 
 /*******************************************/
+ @media only screen and (max-width: 1200px) and (min-width: 1024px) {
+.wrapper{
+	width: 98%;
+ }
+}
